@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Price Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cake Price Calculator</h1>
+
+        <form id="cakeForm">
+            <label for="flavour">Choose a cake flavour:</label>
+            <select id="flavour">
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="lemon">Lemon</option>
+            </select>
+
+            <label for="weight">Enter weight of the cake (kg):</label>
+            <input type="number" id="weight" step="0.5" min="0.5" required>
+
+            <button type="submit">Calculate Price</button>
+        </form>
+
+        <div id="priceOutput"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
